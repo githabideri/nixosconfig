@@ -77,7 +77,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+    services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nixos = {
@@ -99,6 +99,7 @@
       solaar
       transmission
       vlc
+      powerstat # only for Laptops, to measure battery usage in watts
 # knowledge management
 #      goldendict # Disabled, because it uses qtwebkit5 and NixOS is complaining about it being insecure
       syncthing
