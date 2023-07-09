@@ -87,8 +87,7 @@
     packages = with pkgs; [
 # Basic programs
       firefox
-#      chromium
-      ungoogled-chromium # wenn ungoogled funktioniert, kann das obere chromium entfernt werden
+      ungoogled-chromium
       bitwarden
       signal-desktop
       skypeforlinux
@@ -101,21 +100,21 @@
       transmission
       vlc
 # knowledge management
-#      goldendict Anm.: verwendet wohl das unsicher qtwebkit5, habe es daher deaktiviert
+#      goldendict # Disabled, because it uses qtwebkit5 and NixOS is complaining about it being insecure
       syncthing
       obsidian
       zotero
 # video workflow,  editing, 3D stuff
-#      davinci-resolve # Verwendet aus irgendeinem Grund Python 2.irgendwas, das aber schon als unsicher gilt, keine Ahnung wieso, hat mir aber mindestens eine halbe Stunde gekostet
+#      davinci-resolve # Disabled, for some reason it uses Python 2.7.something
       blender
       mediathekview
       obs-studio
-#      kdenlive - das gibt es in der Form nicht in der nix repo...
+#      kdenlive # disabled because it does not exist in the nix store in that form
 # gaming
       lutris
       goverlay
       steam
-# digitalization and PDF  workflow
+# digitalization and PDF workflow
       scantailor-advanced
       gImageReader
       gscan2pdf
@@ -124,7 +123,7 @@
 # graphics
       gimp-with-plugins
 # software developement
-      vscode-with-extensions # bin mir nicht sicher welche Version, da gibt es drei verschiedene
+      vscode-with-extensions
     ];
   };
 
