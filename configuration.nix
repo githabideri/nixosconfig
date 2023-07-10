@@ -100,6 +100,8 @@
       transmission
       vlc
       powerstat # only for Laptops, to measure battery usage in watts
+      nvtop-amd # htop for amd apu
+      flameshot # screenshot utility
 # knowledge management
 #      goldendict # Disabled, because it uses qtwebkit5 and NixOS is complaining about it being insecure
       syncthing
